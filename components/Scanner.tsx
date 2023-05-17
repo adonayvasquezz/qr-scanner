@@ -14,7 +14,7 @@ const Scanner = () => {
             <div style={{ display: 'flex', alignItems:'center', flexDirection: 'column', justifyContent: 'center' }}>
                 <h1>scanner 1</h1>
 
-                <div style={{width:'35rem'}}>
+                <div style={{width:'25rem'}}>
                     <QrReader
                         delay={300}
                         facingMode='user'
