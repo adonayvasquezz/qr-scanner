@@ -1,0 +1,29 @@
+.qrContainer {
+    width: '30%'
+}
+
+@media (min-width: 576px) {
+    .qrContainer {
+        width: '70%'
+    }
+}
+
+@media (min-width: 768px) {
+    .qrContainer {
+        width: '60%'
+    }
+}
+
+@media (min-width: 992px) {
+    .qrContainer {
+        width: '45%'
+    }
+}
+
+@media (min-width: 1200px) {
+    .qrContainer {
+        width: '30%'
+    }
+}
+
+

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import QrReader from 'react-qr-reader-es6'
-
+import css from './Scanner.module.css'
 const Scanner = () => {
     const [qrData, setQrData] = useState('')
     const handleScan = (data: any) => {
@@ -14,9 +14,10 @@ const Scanner = () => {
             <div style={{ display: 'flex', alignItems:'center', flexDirection: 'column', justifyContent: 'center' }}>
                 <h1>scanner 1</h1>
 
-                <div style={{ width: '30%' }}>
+                <div style={{width:'35rem'}}>
                     <QrReader
                         delay={300}
+                        facingMode='user'
                         onError={(e) => console.log('error is ', e)}
                         onScan={handleScan}
                         style={{ width: '100%' }}
